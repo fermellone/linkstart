@@ -1,10 +1,10 @@
-    <footer id="footer">
+    <footer id="footer" class="pb-4 pt-4">
         <div class="container">
-            <div class="row">
-                <div class="col">
+            <div class="row text-center">
+                <div class="col-12 col-lg">
                     <a href="#">Contactanos</a>
                 </div>
-                <div class="col">
+                <div class="col-12 col-lg">
                     <a href="#">Apoyanos</a>
                 </div>
             </div>
