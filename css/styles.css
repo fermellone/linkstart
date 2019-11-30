@@ -1,38 +1,115 @@
-#header img {
-    width: 30px;
-    margin-right: 1rem;
+:root {
+	--primario: #3d4590;
+	--secundario: #81b5e2;
+	--terciario: #5a94ff;
+	--pri-onhover: #4650a8;
+	
 }
 
-.btn-linkstart {
-    background-color: #094461;
-    color: white;
+body {
+	padding-top: 58px;
 }
 
-#footer {
-    background: #1c3643;
+/* Header */
+
+	#header img {
+			width: 30px;
+			margin-right: 1rem;
+	}
+
+	#header{
+			background-color: var(--primario);
+	}
+
+	#header span,
+	#header a{
+			color: white;
+	}
+
+	.navbar-toggler-icon {
+		background-image: url(../assets/img/hamb-menu.png);
+	}
+
+
+/* Footer */
+
+	#footer {
+			background: var(--primario);
+	}
+
+	#footer a {
+			color: white;
+	}
+
+/* Sección Hero */
+
+	#Hero {
+			background: var(--primario);
+			color: white;
+			position: relative;
+	}
+
+	#Hero .overlay {
+			position: absolute;
+			top: 0;	
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: rgba(0, 0, 0, 0.1);
+			color: white;
+	}
+
+	#Hero .overlay .container,
+	#Hero .overlay .row {
+			height: 100%;
+	}
+
+	@media (max-width: 768px) {
+		.container {
+			left: auto;
+		}
+	}
+
+	/* Botones */
+
+	.btn-linkstart {
+		background-color: var(--primario);
+		color: white;
+	}
+
+	.btn-linkstart:hover {
+		background-color: var(--pri-onhover);
+		color: white;
+	}
+
+	#Hero .container a:hover {
+		color: var(--primario);
+	}
+
+/* Sección Problemas */
+
+	#Problemas {
+		height: 36em;
+		background: var(--secundario);
+		position: relative;
+	}
+
+	#Problemas .overlay {
+		position: absolute;
+		top: 0;	
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(0, 0, 0, 0.1);
+		color: white;
+	}
+
+	#Problemas .overlay .container,
+	#Problemas .overlay .row {
+		height: 36em;
+	}
+
+.navbar-toggler-icon {
+	color: white;
 }
 
-#footer a {
-    color: white;
-}
-
-#Hero {
-    background: hsl(201, 56%, 24%);
-    color: white;
-    position: relative;
-}
-
-#Hero .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    color: white;
-}
-
-#Hero .overlay .container,
-#Hero .overlay .row {
-    height: 100%;
-}

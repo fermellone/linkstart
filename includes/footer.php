@@ -2,10 +2,10 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-12 col-lg">
-                    <a href="#">Contactanos</a>
+                    <a href="#">Contáctanos</a>
                 </div>
                 <div class="col-12 col-lg">
-                    <a href="#">Apoyanos</a>
+                    <a href="#">Apóyanos</a>
                 </div>
             </div>
         </div>
