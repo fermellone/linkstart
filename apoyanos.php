@@ -22,7 +22,7 @@
                     <th>Objetivo</th>
                     <th>Detalles</th>
                     <th>Aporte</th>
-                    <th type="number">Monto</th>
+                    <th>Monto</th>
                     <th>Fecha Límite</th>
                 </tr>
             </tr>

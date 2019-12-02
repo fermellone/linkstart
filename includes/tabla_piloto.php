@@ -15,10 +15,10 @@ $total_piloto = 0;
 if ($result-> num_rows > 0) {
     echo "<tbody>";
     while($row = $result-> fetch_assoc()) {
-        echo "<tr><td>". $row['nombre']. "</td><td>". $row['descripcion'] ."</td><td>". $row['tipo'] ."</td><td>". $row['monto']['-1'], $row['monto']['-2'], $row['monto']['-3']. "</td><td>". $row['fecha_limite'] ."</td></tr>";
+        echo "<tr><td>". $row['nombre']. "</td><td>". $row['descripcion'] ."</td><td>". $row['tipo'] ."</td><td>". $row['monto']."</td><td>". $row['fecha_limite'] ."</td></tr>";
         $total_piloto = $total_piloto + $row['monto'];
     }
-    echo "<tr><td>Total:</td><td>-</td><td>-</td><td>$total_piloto</td><td>-</td></tr>";
+    echo "<tr><td>Total:</td><td>-</td><td>-</td><td>".$total_piloto."</td><td>-</td></tr>";
     echo "</tbody>";
 }
 else {
