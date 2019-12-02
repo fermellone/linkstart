@@ -1,115 +1,169 @@
 :root {
-	--primario: #3d4590;
-	--secundario: #81b5e2;
-	--terciario: #5a94ff;
-	--pri-onhover: #4650a8;
-	
+    --primario: #3d4590;
+    --secundario: #81b5e2;
+    --terciario: #5a94ff;
+    --pri-onhover: #4650a8;
 }
 
 body {
-	padding-top: 58px;
+    padding-top: 58px;
 }
+
 
 /* Header */
 
-	#header img {
-			width: 30px;
-			margin-right: 1rem;
-	}
+#header img {
+    width: 31px;
+    margin-right: 1rem;
+}
 
-	#header{
-			background-color: var(--primario);
-	}
+#header {
+    background-color: var(--primario);
+}
 
-	#header span,
-	#header a{
-			color: white;
-	}
+#header a {
+    color: white;
+}
 
-	.navbar-toggler-icon {
-		background-image: url(../assets/img/hamb-menu.png);
-	}
+.navbar-toggler-icon {
+    background-image: url(../assets/img/hamb-menu.png);
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+@media (max-width: 1002px) {
+    #header .container #navbarSupportedContent ul .nosotros-lg {
+        display: none;
+    }
+    #header .container #navbarSupportedContent ul .nosotros-sm {
+        display: block;
+    }
+}
+
+@media (min-width: 1003px) {
+    #header .container #navbarSupportedContent ul .nosotros-lg {
+        display: inline-block;
+    }
+    #header .container #navbarSupportedContent ul .nosotros-sm {
+        display: none;
+    }
+}
 
 
 /* Footer */
 
-	#footer {
-			background: var(--primario);
-	}
+#footer {
+    background: var(--primario);
+}
 
-	#footer a {
-			color: white;
-	}
+#footer a {
+    color: white;
+}
+
 
 /* Sección Hero */
 
-	#Hero {
-			background: var(--primario);
-			color: white;
-			position: relative;
-	}
+#Hero {
+    background: var(--primario);
+    color: white;
+    position: relative;
+}
 
-	#Hero .overlay {
-			position: absolute;
-			top: 0;	
-			bottom: 0;
-			left: 0;
-			right: 0;
-			background-color: rgba(0, 0, 0, 0.1);
-			color: white;
-	}
+#Hero .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+}
 
-	#Hero .overlay .container,
-	#Hero .overlay .row {
-			height: 100%;
-	}
+#Hero .overlay .container,
+#Hero .overlay .row {
+    height: 100%;
+}
 
-	@media (max-width: 768px) {
-		.container {
-			left: auto;
-		}
-	}
+@media (max-width: 768px) {
+    .container {
+        left: auto;
+    }
+    #header {
+        position: inherit;
+    }
+    body {
+        padding-top: 0;
+    }
+}
 
-	/* Botones */
 
-	.btn-linkstart {
-		background-color: var(--primario);
-		color: white;
-	}
+/* Botones */
 
-	.btn-linkstart:hover {
-		background-color: var(--pri-onhover);
-		color: white;
-	}
+.btn-linkstart {
+    background-color: var(--primario);
+    color: white;
+}
 
-	#Hero .container a:hover {
-		color: var(--primario);
-	}
+#Hero .container a:hover {
+    color: var(--primario);
+}
+
+#Hero .container .btn-linkstart:hover {
+    background-color: var(--pri-onhover);
+    color: white;
+}
+
+.container .btn-linkstart:hover {
+    background-color: var(--pri-onhover);
+    color: white;
+}
+
 
 /* Sección Problemas */
 
-	#Problemas {
-		height: 36em;
-		background: var(--secundario);
-		position: relative;
-	}
-
-	#Problemas .overlay {
-		position: absolute;
-		top: 0;	
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background-color: rgba(0, 0, 0, 0.1);
-		color: white;
-	}
-
-	#Problemas .overlay .container,
-	#Problemas .overlay .row {
-		height: 36em;
-	}
-
-.navbar-toggler-icon {
-	color: white;
+#Problemas {
+    height: 40em;
+    background: var(--secundario);
+    position: relative;
 }
 
+#Problemas .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+#Problemas .overlay .container,
+#Problemas .overlay .row {
+    height: 36em;
+}
+
+
+/* Sección Soluciones */
+
+#Soluciones {
+    height: 40em;
+    background-color: white;
+    position: relative;
+}
+
+#Soluciones .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    color: var(--primario);
+}
+
+#Soluciones .overlay .container,
+#Soluciones .overlay .row {
+    height: 36em;
+}
