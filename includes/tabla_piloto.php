@@ -10,7 +10,7 @@ $sql = "SELECT nombre, descripcion, tipo, monto, fecha_limite FROM objetivos WHE
 
 $result = $conn->query($sql);
 
-$total_piloto = 0;
+$total_piloto = 0; 
 
 if ($result-> num_rows > 0) {
     echo "<tbody>";
