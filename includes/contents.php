@@ -1,5 +1,6 @@
 
 <section id="Hero">
+	<a name="top"></a>
 	<img src="assets/img/hero.png" alt="Hero" class="img-fluid rounded">
 	<div class="overlay">
 		<div class="container">

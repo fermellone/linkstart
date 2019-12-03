@@ -2,7 +2,7 @@
 
 <div class="container my-4 py-3">
   <h3 class="h1 col-md-6 my-4">Mandanos tus datos y contactamos contigo para reservar tu lugar</h3>
-  <form-group class="">
+  <form-group class="nuevo-participante">
     <div class="form-group col-md-6 mt-4">
       <input type="text" class="form-control" placeholder="Nombre">
     </div>
@@ -24,7 +24,7 @@
         Quiero participar
       </label>
     </div>
-    <button class="btn btn-linkstart ml-3 mt-4" type="submit">Enviar</button>
+    <button class="btn btn-linkstart ml-3 mt-4" type="submit" onclick="window.location.href='/participa.php'">Enviar</button>
   </form-group>
 </div>
 

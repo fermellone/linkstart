@@ -1,4 +1,5 @@
-<footer id="footer" class="pb-4 pt-4">
+    <a href="#top" class="btn btn-linkstart d-float offset-lg-11 offset-sm-10"></a>
+    <footer id="footer" class="pb-4 pt-4">
         <div class="container">
             <div class="row text-center">
                 <div class="col-12 col-lg">

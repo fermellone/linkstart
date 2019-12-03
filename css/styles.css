@@ -96,12 +96,17 @@ body {
     body {
         padding-top: 0;
     }
+    .container .acu {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
 }
 
 
 /* Botones */
 
-.btn-linkstart {
+.btn-linkstart,
+.btn-linkstart a {
     background-color: var(--primario);
     color: white;
 }
@@ -115,7 +120,8 @@ body {
     color: white;
 }
 
-.container .btn-linkstart:hover {
+.container .btn-linkstart:hover,
+.container .btn-linkstart a:hover {
     background-color: var(--pri-onhover);
     color: white;
 }
@@ -166,4 +172,15 @@ body {
 #Soluciones .overlay .container,
 #Soluciones .overlay .row {
     height: 36em;
+}
+
+
+/* Apóyanos */
+
+#container-piloto {
+    margin-top: 6rem;
+}
+
+#container-metas p {
+    font-size: 1.2rem;
 }
