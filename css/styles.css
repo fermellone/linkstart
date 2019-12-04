@@ -210,9 +210,44 @@ body {
     font-size: 1.2rem;
 }
 
+#container-metas {
+    margin-top: 2.5rem;
+}
+
 
 /* Plan Piloto  */
 
 #piloto-content {
     font-size: 1.5rem;
+}
+
+
+/* Contacto */
+
+#info-contacto {
+    text-align: center;
+    padding-top: 11rem;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-color: var(--secundario);
+}
+
+#izq {
+    padding-right: 3rem;
+}
+
+
+/* General */
+
+body {
+    background-color: rgba(199, 196, 196, 0.712);
+}
+
+body .container-content {
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+html {
+    max-width: 100%;
 }
