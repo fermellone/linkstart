@@ -33,24 +33,10 @@ body {
     color: white;
 }
 
-@media (max-width: 1002px) {
-    #header .container #navbarSupportedContent ul .nosotros-lg {
-        display: none;
-    }
-    #header .container #navbarSupportedContent ul .nosotros-sm {
-        display: block;
-    }
-}
 
-@media (min-width: 1003px) {
-    #header .container #navbarSupportedContent ul .nosotros-lg {
-        display: inline-block;
-    }
-    #header .container #navbarSupportedContent ul .nosotros-sm {
-        display: none;
-    }
+#header .container #navbarSupportedContent ul .nosotros-sm {
+    display: none;
 }
-
 
 /* Footer */
 
@@ -63,7 +49,7 @@ body {
 }
 
 
-/* Sección Hero */
+/* Media Queries */
 
 @media (max-width: 768px) {
     .container {
@@ -79,6 +65,16 @@ body {
         font-size: 1.5rem;
         margin-left: 1rem;
     }
+
+    #Nosotros {
+        background-color: white;
+        height: 20rem;
+    }
+
+    #Soluciones {
+        height: 25rem;
+    }
+
 }
 
 
@@ -114,6 +110,8 @@ body {
         padding: 6px 14px 6px 14px;
     }
 }
+
+/* Sección Hero */
 
 #Hero .container a:hover {
     color: var(--primario);
@@ -159,15 +157,13 @@ body {
 
 /* Sección Soluciones */
 
-#Soluciones,
-#Nosotros {
-    height: 50em;
+#Soluciones {
+    height: 50rem;
     background-color: white;
     position: relative;
 }
 
-#Soluciones .overlay,
-#Nosotros .overlay {
+#Soluciones .overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -178,9 +174,7 @@ body {
 }
 
 #Soluciones .overlay .container,
-#Soluciones .overlay .row,
-#Nosotros .overlay .container,
-#Nosotros .overlay .row {
+#Soluciones .overlay .row {
     height: 36em;
 }
 
@@ -244,5 +238,9 @@ html {
 }
 
 #Hero .container {
-    max-height: 36rem;
+    max-height: 53rem;
+}
+
+#Nosotros .container {
+    color: var(--primario);
 }
