@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
-    <link rel="shortcut icon" href="assets/img/Logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/icons/favicon.png" style="height: 35px; width: 35px;" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400&display=swap" rel="stylesheet">
     <title>LinkStart</title>
@@ -20,7 +20,7 @@
     <nav id="header" class="navbar fixed-top navbar-expand-lg nav-mod">
         <div class="container">
             <a class="navbar-brand" href="/linkstart/">
-                <img src="assets/img/Logo.png" alt="Logo Linkstart">LinkStart
+                <img src="assets/img/Logo.png" alt="Logo Linkstart">
             </a>
             <button class="navbar-toggler" style="border-color: white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -29,32 +29,42 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item nosotros-lg">
-                        <a class="nav-link" href="/linkstart/#Hero">Nosotros <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/linkstart/#Hero"><b>Nosotros</b> <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item nosotros-sm">
-                        <a class=" nav-link" href="/linkstart/nosotros-sm.html">Nosotros <span class="sr-only">(current)</span></a>
+                        <a class=" nav-link" href="/linkstart/nosotros-sm.html"><b>Nosotros</b> <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item nosotros-lg">
-                        <a class="nav-link" href="/linkstart/#Problemas">Problemas</a>
+                        <a class="nav-link" href="/linkstart/#Problemas"><b>Problemas</b></a>
                     </li>
                     <li class="nav-item nosotros-sm">
-                        <a class="nav-link" href="/linkstart/#Problemas">Problemas</a>
+                        <a class="nav-link" href="/linkstart/#Problemas"><b>Problemas</b></a>
                     </li>
                     <li class="nav-item nosotros-lg">
-                        <a class="nav-link" href="/linkstart/#Soluciones">Soluciones</a>
+                        <a class="nav-link" href="/linkstart/#Soluciones"><b>Soluciones</b></a>
                     </li>
                     <li class="nav-item nosotros-sm">
-                        <a class="nav-link" href="/linkstart/#Soluciones">Soluciones</a>
+                        <a class="nav-link" href="/linkstart/#Soluciones"><b>Soluciones</b></a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
     <section id="Hero">
         <a name="top"></a>
-        <img src="assets/img/hero.png" alt="Hero" class="img-fluid rounded">
+        <div class="video-container container">
+            <video id="video" playsinline="" muted="" autoplay="" loop="" data-silent="true" src="https://cdn.dribbble.com/users/1145170/videos/5809/teamwork___startup_illustrations.mp4">
+          </video>
+            <div class="video-controls" style="display: none;">
+                <span class="mute-controls mute-mute">
+            </span>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="Nosotros">
         <div class="overlay">
             <div class="container">
                 <div class="row align-items-center">
@@ -65,9 +75,9 @@
                                 Buscamos ser los detonantes de la cultura TECH en el interior del país. 
                                 Mostrando a las personas que existen herramientas que pueden hacer su vida más fácil
                                 a la vez que aprenden a usarlas para hacer más simples las vidas de los demás en la sociedad.
-                                </b>
+                            </b>
                         </p>
-                        <a href="/linkstart/contacto.html" class="btn btn-outline-light">Participa</a>
+                        <a href="/linkstart/contacto.html" class="btn btn-linkstart">Participa</a>
                         <a class="btn btn-linkstart" href="/linkstart/apoyanos.html">Apóyanos</a>
                     </div>
                 </div>
