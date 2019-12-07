@@ -327,3 +327,10 @@ html {
 
 
 }
+
+@media (max-width:360px) {
+    #footer .footer-item {
+        margin-bottom: 0.8rem;
+        margin-top: 0.8rem
+    }
+}
