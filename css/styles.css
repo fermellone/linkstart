@@ -5,6 +5,16 @@
     --pri-onhover: #ff774e;
 }
 
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.center{
+    display: inline-block;
+}
+
 body {
     padding-top: 58px;
 }
@@ -31,11 +41,6 @@ body {
 
 .navbar-toggler-icon {
     color: white;
-}
-
-
-#header .container #navbarSupportedContent ul .nosotros-sm {
-    display: none;
 }
 
 /* Footer */
@@ -71,8 +76,10 @@ body {
         height: 20rem;
     }
 
-    #Soluciones {
-        height: 25rem;
+    #Nosotros img,
+    #Problemas img {
+        display: none;
+        background-color: var(--pri-onhover);
     }
 
 }
@@ -109,6 +116,11 @@ body {
     #btn-top {
         padding: 6px 14px 6px 14px;
     }
+    
+    #Soluciones {
+        height: 60rem;
+        margin-bottom: 2rem;
+    }
 }
 
 /* Sección Hero */
@@ -120,16 +132,34 @@ body {
     border-color: #FF4F19;
 }
 
-#Nosotros .btn-linkstart:hover {
-    background-color: var(--pri-onhover);
-    color: white;
-}
 
 .container .btn-linkstart:hover,
 .container .btn-linkstart a:hover {
     background-color: var(--pri-onhover);
     color: white;
 }
+
+#Hero {
+    background-color: white;
+    height: fit-content;
+}
+
+/* Sección Nosotros */
+
+#Nosotros .container {
+    color: var(--primario);
+}
+
+#Nosotros {
+    background-color: white;
+    height: 20rem;
+}
+
+#Nosotros .btn-linkstart:hover {
+    background-color: var(--pri-onhover);
+    color: white;
+}
+
 
 
 /* Sección Problemas */
@@ -175,7 +205,7 @@ body {
 
 #Soluciones .overlay .container,
 #Soluciones .overlay .row {
-    height: 36em;
+    height: 36rem;
 }
 
 
@@ -231,16 +261,64 @@ html {
     max-width: 100%;
 }
 
-#Hero,
 #video {
-    max-width: 100%;
+    max-width: 82%;
     background-color: #ffffff;
 }
 
 #Hero .container {
-    max-height: 53rem;
+    max-height: 41rem;
 }
 
-#Nosotros .container {
-    color: var(--primario);
+
+
+
+/* Pantallas grandes */
+
+@media (min-width: 1002px) {
+    #Nosotros {
+        height: max-content;
+        padding-top: 13rem;
+        padding-bottom: 2rem;
+        margin-bottom: 0;
+        background-color: white;
+    }
+
+    #Nosotros img {
+        height: 10%;
+        width: 50%;
+    }
+
+    #Nosotros .container {
+        height: 100%;
+    }
+
+    #Problemas {
+        height: max-content;
+        padding-top: 15.1rem;
+        margin: 0;
+        padding-bottom: 21rem;
+        background-color: white;
+    }
+
+    #Problemas .overlay {
+        color: var(--primario);
+    }
+
+    
+    #Problemas img {
+        height: 50%;
+        widows: 50%;
+    }
+
+    #Hero #video {
+        max-width: 70%;
+    }
+
+    #Soluciones img {
+        width: 25rem;
+        margin: 2rem 0rem;
+    }
+
+
 }
