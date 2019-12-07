@@ -249,11 +249,11 @@ body {
 /* General */
 
 body {
-    background-color: rgba(199, 196, 196, 0.712);
+    background-color: white;
 }
 
 body .container-content {
-    background-color: aliceblue;
+    background-color: white;
     border-radius: 5px;
 }
 
@@ -276,6 +276,11 @@ html {
 /* Pantallas grandes */
 
 @media (min-width: 1002px) {
+
+    body {
+        background-color: rgba(199, 196, 196, 0.712);
+    }
+
     #Nosotros {
         height: max-content;
         padding-top: 13rem;
