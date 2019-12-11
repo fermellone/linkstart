@@ -1,8 +1,18 @@
 :root {
-    --primario: #3d4590;
-    --secundario: #81b5e2;
-    --terciario: #5a94ff;
-    --pri-onhover: #4650a8;
+    --primario: #FF4F19;
+    --secundario: #080708;
+    --terciario: #ffffff;
+    --pri-onhover: #ff774e;
+}
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.center{
+    display: inline-block;
 }
 
 body {
@@ -13,8 +23,8 @@ body {
 /* Header */
 
 #header img {
-    width: 31px;
-    margin-right: 1rem;
+    width: 10rem;
+    margin-right: 0.5rem;
 }
 
 #header {
@@ -33,25 +43,6 @@ body {
     color: white;
 }
 
-@media (max-width: 1002px) {
-    #header .container #navbarSupportedContent ul .nosotros-lg {
-        display: none;
-    }
-    #header .container #navbarSupportedContent ul .nosotros-sm {
-        display: block;
-    }
-}
-
-@media (min-width: 1003px) {
-    #header .container #navbarSupportedContent ul .nosotros-lg {
-        display: inline-block;
-    }
-    #header .container #navbarSupportedContent ul .nosotros-sm {
-        display: none;
-    }
-}
-
-
 /* Footer */
 
 #footer {
@@ -63,28 +54,7 @@ body {
 }
 
 
-/* Sección Hero */
-
-#Hero {
-    background: var(--primario);
-    color: white;
-    position: relative;
-}
-
-#Hero .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.1);
-    color: white;
-}
-
-#Hero .overlay .container,
-#Hero .overlay .row {
-    height: 100%;
-}
+/* Media Queries */
 
 @media (max-width: 768px) {
     .container {
@@ -100,6 +70,18 @@ body {
         font-size: 1.5rem;
         margin-left: 1rem;
     }
+
+    #Nosotros {
+        background-color: white;
+        height: 20rem;
+    }
+
+    #Nosotros img,
+    #Problemas img {
+        display: none;
+        background-color: var(--pri-onhover);
+    }
+
 }
 
 
@@ -134,16 +116,22 @@ body {
     #btn-top {
         padding: 6px 14px 6px 14px;
     }
+    
+    #Soluciones {
+        height: 60rem;
+        margin-bottom: 2rem;
+    }
 }
+
+/* Sección Hero */
 
 #Hero .container a:hover {
     color: var(--primario);
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FF4F19;
 }
 
-#Hero .container .btn-linkstart:hover {
-    background-color: var(--pri-onhover);
-    color: white;
-}
 
 .container .btn-linkstart:hover,
 .container .btn-linkstart a:hover {
@@ -151,12 +139,34 @@ body {
     color: white;
 }
 
+#Hero {
+    background-color: white;
+    height: fit-content;
+}
+
+/* Sección Nosotros */
+
+#Nosotros .container {
+    color: var(--primario);
+}
+
+#Nosotros {
+    background-color: white;
+    height: 20rem;
+}
+
+#Nosotros .btn-linkstart:hover {
+    background-color: var(--pri-onhover);
+    color: white;
+}
+
+
 
 /* Sección Problemas */
 
 #Problemas {
     height: 40em;
-    background: var(--secundario);
+    background: var(--pri-onhover);
     position: relative;
 }
 
@@ -166,7 +176,6 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.1);
     color: white;
 }
 
@@ -179,7 +188,7 @@ body {
 /* Sección Soluciones */
 
 #Soluciones {
-    height: 40em;
+    height: 50rem;
     background-color: white;
     position: relative;
 }
@@ -196,14 +205,14 @@ body {
 
 #Soluciones .overlay .container,
 #Soluciones .overlay .row {
-    height: 36em;
+    height: 36rem;
 }
 
 
 /* Apóyanos */
 
 #container-piloto {
-    margin-top: 6rem;
+    margin-top: 2rem;
 }
 
 #container-metas p {
@@ -240,14 +249,88 @@ body {
 /* General */
 
 body {
-    background-color: rgba(199, 196, 196, 0.712);
+    background-color: white;
 }
 
 body .container-content {
-    background-color: aliceblue;
+    background-color: white;
     border-radius: 5px;
 }
 
 html {
     max-width: 100%;
+}
+
+#video {
+    max-width: 82%;
+    background-color: #ffffff;
+}
+
+#Hero .container {
+    max-height: 41rem;
+}
+
+
+
+
+/* Pantallas grandes */
+
+@media (min-width: 1002px) {
+
+    body {
+        background-color: rgba(199, 196, 196, 0.712);
+    }
+
+    #Nosotros {
+        height: max-content;
+        padding-top: 13rem;
+        padding-bottom: 2rem;
+        margin-bottom: 0;
+        background-color: white;
+    }
+
+    #Nosotros img {
+        height: 10%;
+        width: 50%;
+    }
+
+    #Nosotros .container {
+        height: 100%;
+    }
+
+    #Problemas {
+        height: max-content;
+        padding-top: 15.1rem;
+        margin: 0;
+        padding-bottom: 21rem;
+        background-color: white;
+    }
+
+    #Problemas .overlay {
+        color: var(--primario);
+    }
+
+    
+    #Problemas img {
+        height: 50%;
+        widows: 50%;
+    }
+
+    #Hero #video {
+        max-width: 70%;
+    }
+
+    #Soluciones img {
+        width: 25rem;
+        margin: 2rem 0rem;
+    }
+
+
+}
+
+@media (max-width:360px) {
+    #footer .footer-item {
+        margin-bottom: 0.8rem;
+        margin-top: 0.8rem
+    }
 }

@@ -9,18 +9,25 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
-    <link rel="shortcut icon" href="assets/img/Logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400&display=swap" rel="stylesheet">
+    <style>
+        @media (min-width: 1002px) {
+            #Problemas .col-md-5 {
+                margin-left: 12rem;
+            }
+        }
+    </style>
     <title>LinkStart</title>
 </head>
 
-<body style="font-family: 'Ubuntu', sans-serif">
+<body style="background-color: white; font-family: 'Ubuntu', sans-serif">
     <button onclick="topFunction()" id="btn-top" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
     <nav id="header" class="navbar fixed-top navbar-expand-lg nav-mod">
         <div class="container">
-            <a class="navbar-brand" href="/">
-                <img src="assets/img/Logo.png" alt="Logo Linkstart">LinkStart
+            <a class="navbar-brand" href="/linkstart/#">
+                <img src="assets/img/Logo.png" alt="Logo Linkstart">
             </a>
             <button class="navbar-toggler" style="border-color: white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -29,64 +36,76 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item nosotros-lg">
-                        <a class=" nav-link" href="#Hero">Nosotros <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/linkstart/#Nosotros"><b>Nosotros</b> <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item nosotros-sm">
-                        <a class="nav-link" href="/nosotros-sm.html">Nosotros <span class="sr-only">(current)</span></a>
-                    </li>
+                    <!-- <li class="nav-item nosotros-sm">
+                        <a class=" nav-link" href="/linkstart/#Nosotros"><b>Nosotros</b> <span class="sr-only">(current)</span></a>
+                    </li> -->
                     <li class="nav-item nosotros-lg">
-                        <a class="nav-link" href="#Problemas">Problemas</a>
+                        <a class="nav-link" href="/linkstart/#Problemas"><b>Problemas</b></a>
                     </li>
-                    <li class="nav-item nosotros-sm">
-                        <a class=" nav-link" href="#Problemas">Problemas <span class="sr-only">(current)</span></a>
-                    </li>
+                    <!-- <li class="nav-item nosotros-sm">
+                        <a class="nav-link" href="/linkstart/#Problemas"><b>Problemas</b></a>
+                    </li> -->
                     <li class="nav-item nosotros-lg">
-                        <a class="nav-link" href="#Soluciones">Soluciones</a>
+                        <a class="nav-link" href="/linkstart/#Soluciones"><b>Soluciones</b></a>
                     </li>
-                    <li class="nav-item nosotros-sm">
-                        <a class="nav-link" href="#Soluciones">Soluciones</a>
-                    </li>
+                    <!-- <li class="nav-item nosotros-sm">
+                        <a class="nav-link" href="/linkstart/#Soluciones"><b>Soluciones</b></a>
+                    </li> -->
                 </ul>
             </div>
         </div>
     </nav>
 
-
     <section id="Hero">
         <a name="top"></a>
-        <img src="assets/img/hero.png" alt="Hero" class="img-fluid rounded">
+        <div class="video-container container">
+            <video id="video" playsinline="" muted="" autoplay="" loop="" data-silent="true" src="https://cdn.dribbble.com/users/1145170/videos/5809/teamwork___startup_illustrations.mp4">
+          </video>
+            <div class="video-controls" style="display: none;">
+                <span class="mute-controls mute-mute">
+            </span>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="Nosotros">
         <div class="overlay">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-6 text-center text-md-left">
                         <h1><b>En LinkStart:</b></h1>
-                        <p class="d-none d-md-block">
+                        <p>
                             <b>
                                 Buscamos ser los detonantes de la cultura TECH en el interior del país. 
                                 Mostrando a las personas que existen herramientas que pueden hacer su vida más fácil
                                 a la vez que aprenden a usarlas para hacer más simples las vidas de los demás en la sociedad.
-                                </b>
+                            </b>
                         </p>
-                        <a href="/contacto.html" class="btn btn-outline-light">Participa</a>
-                        <a class="btn btn-linkstart" href="/apoyanos.html">Apóyanos</a>
+                        <a href="/linkstart/contacto.html" class="btn btn-linkstart">Participa</a>
+                        <a class="btn btn-linkstart" href="/linkstart/apoyanos.html">Apóyanos</a>
                     </div>
+                    <img class="right" src="assets/img/seccion_nosotros.png" alt="Nosotros.png">
                 </div>
             </div>
-        </div>
+        </div> 
     </section>
 
     <section id="Problemas">
         <div class="overlay">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-7 text-center text-md-left">
+                    <img src="https://cdn.dribbble.com/users/2458753/screenshots/5632185/desert_dribbbleee.jpg" alt="Desert">
+                    <div class="col-md-5 text-left text-md-left texto">
                         <h6 class="h1"><b>Los problemas a los que atacamos son:</b></h1>
                             <p class="d-none d-md-block">
                                 <ol>
-                                    <b><li>La falta de salida laboral en Misiones, especialmente en el área de IT.</li></b>
+                                    <b><li>La falta de salida laboral en Misiones, especialmente en el área de TIC.</li></b>
                                     <b><li>La inexistente posibilidad de adquisición de experiencia.</li></b>
-                                    <b><li>La falta de apoyo a estudiantes y personas interesadas en tecnología.</li></b>
-                                    <b><li>El límite que genera el escaso conocimiento de la existencia de herramientas tecnológicas en el departamento.</li></b>
+                                    <b><li>La falta de apoyo a estudiantes y personas interesadas en tecnología en el interior.</li></b>
+                                    <b><li>La limitación que genera el no saber de la existencia de herramientas tecnológicas.</li></b>
                                 </ol>
                             </p>
                     </div>
@@ -101,12 +120,20 @@
                 <div class="row align-items-center">
                     <div class="col-md-7 text-center text-md-left">
                         <h6 class="h1"><b>Los soluciones que proponemos son:</b></h1>
-                            <h1 class="h3">Hackerspace</h1>
+                            <h1 class="h3">Armar un Hackerspace</h1>
                             <p class="d-none d-md-block">
-                                Queremos crear un lugar público en el cual todos podamos compartir conocimiento y ayudar a cualquier persona a que pueda desarrollar sus proyectos, ideas o productos digitales dándoles la mayor participación posible.
-                                <br><br> Con ese objetivo, elegimos este stack:
+                                Un Hackerspace (o HackLab) es un lugar en donde gente con intereses 
+                                en ciencia, nuevas tecnologías, y artes digitales o electrónicas se 
+                                puede conocer, socializar y colaborar.
                             </p>
-                            <ul class="ml-2">
+                            <p>
+                                Es necesario un lugar público en el cual todos podamos compartir 
+                                conocimiento y ayudar a cualquier persona a que pueda desarrollar sus 
+                                proyectos, ideas o productos digitales dándoles la mayor participación 
+                                posible además de un lugar cómodo e inspirador.
+                                <br><br> Estas son las herramientas que queremos ofrecer:
+                            </p>
+                            <ul class="ml-4 text-left">
                                 <li>HTML & CSS</li>
                                 <li>Git y GitHub</li>
                                 <li>MySQL</li>
@@ -118,7 +145,15 @@
                                 Sin embargo somos un grupo súper abierto a aprender sobre nuevas herramientas y tecnologías.
                             </p>
                             <h2 class="h3">Bootcamp/Hackathon</h2>
-                            <p>Los detalles dependerán de los resultados de nuestro <a href="/plan_piloto.html">Plan Piloto</a></p>
+                            <p>Los detalles dependerán de los resultados de nuestro <a href="/linkstart/plan_piloto.html">Plan Piloto</a></p>
+                    </div>
+                    <div class="col-lg-5 d-none d-lg-inline">
+                        <div class="col-lg-6">
+                            <img src="assets/img/seccion_soluciones_1.jpg" alt="personas trabajando juntas">
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="assets/img/seccion_soluciones_2.png" alt="persona rodeada de tecnología">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -127,11 +162,11 @@
     <footer id="footer" class="pb-4 pt-4">
         <div class="container">
             <div class="row text-center">
-                <div class="col-12 col-lg">
-                    <a href="contacto.html">Contáctanos</a>
+                <div class="col-12 col-lg footer-item">
+                    <a href="/linkstart/contacto.html">Contáctanos</a>
                 </div>
-                <div class="col-12 col-lg">
-                    <a href="apoyanos.html">Apóyanos</a>
+                <div class="col-12 col-lg footer-item">
+                    <a href="/linkstart/apoyanos.html">Apóyanos</a>
                 </div>
             </div>
         </div>
@@ -163,6 +198,18 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="/js/smooth-scroll.min.js"></script>
+    <!-- No funciona en github pages -->
+        <script>
+            var scroll = new SmoothScroll('a[href*="/linkstart/#"]');
+            var scroll = new SmoothScroll('a[href*="/linkstart/#"]', {
+                speed: 300
+            });
+            var scroll = new SmoothScroll('a[href*="/linkstart/#"]', {
+                speed: 500,
+                speedAsDuration: true
+            });
+        </script>
 </body>
 
 </html>
