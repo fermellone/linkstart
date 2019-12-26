@@ -7,12 +7,12 @@ firebase.initializeApp({
 });
 var db = firebase.firestore();
 
-var nombre = document.getElementById('nombre').value;
-var email = document.getElementById('email').value;
-var celular = document.getElementById('celular').value;
-var comentario = document.getElementById('comentario').value;
 
 function guardarInfo() {
+    var nombre = document.getElementById('nombre').value;
+    var email = document.getElementById('email').value;
+    var celular = document.getElementById('celular').value;
+    var comentario = document.getElementById('comentario').value;
 
     db.collection("personas").add({
             nombre: nombre,
