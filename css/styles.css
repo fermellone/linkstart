@@ -334,3 +334,8 @@ html {
         margin-top: 0.8rem
     }
 }
+
+.loginContainer .form * {
+    display: block;
+    margin: 1rem auto;
+}
