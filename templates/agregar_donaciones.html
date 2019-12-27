@@ -22,9 +22,11 @@
     <button onclick="topFunction()" id="btn-top" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
     <div class="container">
       <h4 class="h1">Agregar Donaciones</h4>
-      <button class="btn btn-linkstart" onclick="agregar_donacion()">Agregar</button>
-      <button class="btn btn-linkstart" onclick="modificar_donacion()">Modificar</button>
-      <button class="btn btn-linkstart" onclick="eliminar_donacion()">Eliminar</button>
+        <div id="crud">
+          <button class="btn btn-linkstart" onclick="agregar_donacion()">Agregar</button>
+          <button class="btn btn-linkstart" onclick="modificar_donacion()">Modificar</button>
+          <button class="btn btn-linkstart" onclick="eliminar_donacion()">Eliminar</button>
+        </div>
       <div class="container container-content" id="container-metas">
         <div id="formContainer"></div>
         <div class="container container-content" id="container-piloto">

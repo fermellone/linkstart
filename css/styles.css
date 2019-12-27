@@ -349,3 +349,7 @@ html {
     display: block;
     margin: 1rem 0;
 }
+
+#formContainer .btn {
+    display: inline;
+}
