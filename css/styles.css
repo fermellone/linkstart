@@ -335,7 +335,18 @@ html {
     }
 }
 
-.loginContainer .form * {
+#loginContainer #form * {
+    display: block;
+    margin: 1rem auto;
+}
+
+#form {
+    display: none;
+    margin: 1rem auto;
+}
+
+#btn-logout
+ {
     display: block;
     margin: 1rem auto;
 }
