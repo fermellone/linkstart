@@ -1,9 +1,9 @@
 console.log("conectado");
 
 firebase.initializeApp({
-    apiKey: "AIzaSyB5lRiA2zsT55k14mB95eyGQZDAAB_WmqE",
-    authDomain: "linkstart-1.firebaseapp.com",
-    projectId: "linkstart-1",
+    apiKey: "",
+    authDomain: "",
+    projectId: "",
 });
 var db = firebase.firestore();
 
