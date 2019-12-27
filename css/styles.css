@@ -335,18 +335,17 @@ html {
     }
 }
 
-#loginContainer #form * {
+#form * {
     display: block;
     margin: 1rem auto;
 }
 
-#form {
-    display: none;
-    margin: 1rem auto;
+.btn-linkstart:hover {
+    background-color: var(--pri-onhover);
+    color: white;
 }
 
-#btn-logout
- {
+#formContainer * {
     display: block;
-    margin: 1rem auto;
+    margin: 1rem 0;
 }
