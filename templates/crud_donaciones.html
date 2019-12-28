@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400&display=swap" rel="stylesheet">
     <title>LinkStart</title>
+
+    <!-- vueJS CDN -->
+    <script src="../js/vue.js"></script>
 </head>
 
 <body style="font-family: 'Ubuntu', sans-serif">
@@ -33,7 +36,7 @@
                                 <h4 class="acu">Objetivo total: 3.358.000Gs.</h4>
                             </div>
                             <div class="list-group-item">
-                                <h4 class="acu">Acumulado: 1.184.000Gs.</h4>
+                                <h4 class="acu" id="app">Acumulado: {{ acumulado }}</h4>
                             </div>
                         </div>
                     </div>
@@ -50,60 +53,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Anónimo/a</td>
-                            <td>-</td>
-                            <td>100.000Gs.</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>Héctor (Dani) Bogado<br></td>
-                            <td>El conocimiento es poder ;v</td>
-                            <td>130.000Gs.</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>TecnoPage</td>
-                            <td>-</td>
-                            <td>400.000Gs</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>Ricardo Pont</td>
-                            <td>Por la educación &#129504;</td>
-                            <td>-</td>
-                            <td>Acondicionador de Aire</td>
-                        </tr>
-                        <tr>
-                            <td>Amaia Marecos</td>
-                            <td>Para los internautas &#128513;</td>
-                            <td>-</td>
-                            <td>Dispensador de agua fría y caliente</td>
-                        </tr>
-                        <tr>
-                            <td>Anónimo</td>
-                            <td>Persevera y triunfaras.</td>
-                            <td>50.000Gs.</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>Ana Martinez</td>
-                            <td>-</td>
-                            <td>200.000Gs.</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>Anónimo</td>
-                            <td>Para completar</td>
-                            <td>15.000Gs.</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>Anónimo</td>
-                            <td>Para cubrir el internet</td>
-                            <td>289.000Gs.</td>
-                            <td>-</td>
-                        </tr>
+
                     </tbody>
                 </table>
             </div>

@@ -33,8 +33,8 @@ function visitor() {
     console.log('Desconectado')
     var content = document.getElementById('form');
     content.innerHTML = `
-        <input id="user" type="email" placeholder="user">
-        <input id="pass" type="password" placeholder="pass">
+        <input class="form-control" id="user" type="email" placeholder="user">
+        <input class="form-control" id="pass" type="password" placeholder="pass">
         <button class="btn btn-linkstart" id="btn-login" onclick="login()">Log In</button>
     `;
 }

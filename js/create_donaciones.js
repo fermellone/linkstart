@@ -56,8 +56,8 @@ function formDonacion() {
                     <input class="form-control" id="mensaje" type="text" placeholder="Mensaje">
                     <input class="form-control" id="monto" type="number" placeholder="Monto">
                     <input class="form-control" id="detalles" type="text" placeholder="Detalles">
-                    <button class="btn btn-linkstart" onclick="guardar_donacion();return false;">Guardar</button>
-                    <button class="btn btn-linkstart" onclick="cancelar_donacion();return false;">Cancelar</button>
+                    <button class="btn btn-linkstart btn-sm" onclick="guardar_donacion();return false;">Guardar</button>
+                    <button class="btn btn-linkstart btn-sm" onclick="cancelar_donacion();return false;">Cancelar</button>
                 `;
         formulario.appendChild(elemento);
     }
