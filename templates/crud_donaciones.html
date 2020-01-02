@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+    <link rel="shortcut icon" href="../assets/icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400&display=swap" rel="stylesheet">
+    <title>LinkStart</title>
+
+    <!-- vueJS CDN -->
+    <script src="../js/vue.js"></script>
+</head>
+
+<body style="font-family: 'Ubuntu', sans-serif">
+    <button onclick="topFunction()" id="btn-top" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+
+
+    <div class="container">
+        <!-- formulario de control de sesión -->
+        <div id="form"></div>
+        <!-- /formulario de control de sesión -->
+        <div class="container container-content" id="container-metas">
+            <div class="container container-content" id="container-piloto">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="h1">Plan Piloto</h2>
+                        <div class="list-group pb-4">
+                            <div class="list-group-item">
+                                <h4 class="acu">Objetivo total: 3.358.000Gs.</h4>
+                            </div>
+                            <div class="list-group-item">
+                                <h4 class="acu" id="app">Acumulado: {{ acumulado }}</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Mensaje</th>
+                                <th>Monto</th>
+                                <th>Otros</th>
+                            </tr>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase imports -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+
+    <!-- Local scripts -->
+    <script src="../js/goTopArrow.js"></script>
+    <script src="../js/firebaseConfig.js"></script>
+    <script src="../js/session.js"></script>
+    <script src="../js/create_donaciones.js"></script>
+    <script src="../js/read_donaciones.js"></script>
+
+    <!-- Bootstrap imports -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
