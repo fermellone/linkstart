@@ -1,7 +1,13 @@
 
 //Agregar la configuración de firebase acá
 var firebaseConfig = {
-  
+  apiKey: "AIzaSyB5lRiA2zsT55k14mB95eyGQZDAAB_WmqE",
+  authDomain: "linkstart-1.firebaseapp.com",
+  databaseURL: "https://linkstart-1.firebaseio.com",
+  projectId: "linkstart-1",
+  storageBucket: "linkstart-1.appspot.com",
+  messagingSenderId: "578403655062",
+  appId: "1:578403655062:web:01eeb8b607a7d4b7cb11b7"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
