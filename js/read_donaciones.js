@@ -7,19 +7,17 @@ var total = 0;
 
 //Se extrae los montos del firestore cloud y se suman en la variable "total"
 
-db.collection("donaciones").get()
+var datos = db.collection("donaciones").get()
     .then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
             total += doc.data()['monto'];
         });
     });
 
-new Vue({
+var app = new Vue({
     el: '#app',
-
-    data() {
-        return {
+    data: {
             acumulado: total
         }
     }
-})
+)
