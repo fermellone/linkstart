@@ -5,13 +5,15 @@
     --pri-onhover: #ff774e;
 }
 
-.left{
+.left {
     float: left;
 }
-.right{
+
+.right {
     float: right;
 }
-.center{
+
+.center {
     display: inline-block;
 }
 
@@ -43,6 +45,7 @@ body {
     color: white;
 }
 
+
 /* Footer */
 
 #footer {
@@ -70,18 +73,15 @@ body {
         font-size: 1.5rem;
         margin-left: 1rem;
     }
-
     #Nosotros {
         background-color: white;
         height: 20rem;
     }
-
     #Nosotros img,
     #Problemas img {
         display: none;
         background-color: var(--pri-onhover);
     }
-
 }
 
 
@@ -116,12 +116,12 @@ body {
     #btn-top {
         padding: 6px 14px 6px 14px;
     }
-    
     #Soluciones {
         height: 60rem;
         margin-bottom: 2rem;
     }
 }
+
 
 /* Sección Hero */
 
@@ -131,7 +131,6 @@ body {
     border-width: 1px;
     border-color: #FF4F19;
 }
-
 
 .container .btn-linkstart:hover,
 .container .btn-linkstart a:hover {
@@ -143,6 +142,7 @@ body {
     background-color: white;
     height: fit-content;
 }
+
 
 /* Sección Nosotros */
 
@@ -159,7 +159,6 @@ body {
     background-color: var(--pri-onhover);
     color: white;
 }
-
 
 
 /* Sección Problemas */
@@ -271,16 +270,12 @@ html {
 }
 
 
-
-
 /* Pantallas grandes */
 
 @media (min-width: 1002px) {
-
     body {
         background-color: rgba(199, 196, 196, 0.712);
     }
-
     #Nosotros {
         height: max-content;
         padding-top: 13rem;
@@ -288,16 +283,13 @@ html {
         margin-bottom: 0;
         background-color: white;
     }
-
     #Nosotros img {
         height: 10%;
         width: 50%;
     }
-
     #Nosotros .container {
         height: 100%;
     }
-
     #Problemas {
         height: max-content;
         padding-top: 15.1rem;
@@ -305,27 +297,20 @@ html {
         padding-bottom: 21rem;
         background-color: white;
     }
-
     #Problemas .overlay {
         color: var(--primario);
     }
-
-    
     #Problemas img {
         height: 50%;
         widows: 50%;
     }
-
     #Hero #video {
         max-width: 70%;
     }
-
     #Soluciones img {
         width: 25rem;
         margin: 2rem 0rem;
     }
-
-
 }
 
 @media (max-width:360px) {
@@ -333,4 +318,22 @@ html {
         margin-bottom: 0.8rem;
         margin-top: 0.8rem
     }
+}
+
+#form * {
+    display: block;
+    /* margin-top: 3rem; */
+}
+
+.btn-linkstart:hover {
+    background-color: var(--pri-onhover);
+    color: white;
+}
+
+#form .btn {
+    display: inline;
+}
+
+#form {
+    text-align: center;
 }
